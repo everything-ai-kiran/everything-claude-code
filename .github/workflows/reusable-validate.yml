@@ -4,10 +4,10 @@ on:
   workflow_call:
     inputs:
       node-version:
-        description: 'Node.js version'
+        description: "Node.js version"
         required: false
         type: string
-        default: '20.x'
+        default: "20.x"
 
 jobs:
   validate:
@@ -41,3 +41,6 @@ jobs:
 
       - name: Validate rules
         run: node scripts/ci/validate-rules.js
+
+      - name: Validate copilot assets
+        run: node scripts/ci/validate-copilot-assets.js

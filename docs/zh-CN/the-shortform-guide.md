@@ -430,3 +430,14 @@ affoon:~ ctx:65% Opus 4.5 19:52
 ***
 
 *在纽约与 [@DRodriguezFX](https://x.com/DRodriguezFX) 一起构建 [zenith.chat](https://zenith.chat) 赢得了 Anthropic x Forum Ventures 黑客马拉松*
+
+## GitHub Copilot 快速上手
+
+Everything Claude Code 同样可在 VS Code 的 GitHub Copilot Chat 中使用，并保持一致的工作流体验。
+
+- 在 VS Code 安装 GitHub Copilot 与 Copilot Chat，并打开本仓库工作区。
+- 使用 `.github/copilot-instructions.md` 作为工作区级常驻规则与行为约束。
+- 使用 `.github/agents/` 管理可复用的 Copilot 智能体并通过下拉菜单调用。
+- 使用 `.github/prompts/` 沉淀高频斜杠工作流入口。
+- 使用 `.github/skills/` 承载可复用的流程知识并与现有配置保持一致。
+- 先固定一个核心流程（`/plan`、`/tdd`、`/code-review`），再逐步扩展自动化。

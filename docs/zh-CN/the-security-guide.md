@@ -591,3 +591,16 @@ Grade A (Score: 94) after second pass
 *基于 10 个月维护 GitHub 上最受分叉的代理配置、审计数千个社区贡献以及构建工具来自动化人类无法大规模捕捉的问题的经验而构建。*
 
 *Affaan Mustafa ([@affaanmustafa](https://x.com/affaanmustafa)) — Everything Claude Code 和 AgentShield 的创建者*
+
+## GitHub Copilot 加固清单
+
+将本指南的安全原则直接应用到 Copilot Chat 的配置、提示与智能体资产。
+
+- 在 `.github/copilot-instructions.md` 固化策略并通过 PR 严格审计变更。
+- 严禁在提示词、示例、智能体文件或设置中提交任何密钥与凭证。
+- 将任务读取范围限制到最小文件集，避免不必要的全仓扫描。
+- 对 AI 生成命令与基础设施改动执行人工复核后再落地。
+- 把第三方提示/智能体资源当作供应链输入，先审计后引入。
+- 维持最小扩展与 MCP 集合，停用未使用能力。
+- 在 CI 中增加 `.github/agents/`、`.github/prompts/`、`.github/skills/` 的完整性与策略校验。
+- 对高影响 AI 改动保留审计记录，按与人工改动同等级别复盘。

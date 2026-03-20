@@ -791,3 +791,17 @@ MIT - 自由に使用、必要に応じて修正、可能であれば貢献し�
 ---
 
 **このリポジトリが役に立ったら、Star を付けてください。両方のガイドを読んでください。素晴らしいものを構築してください。**
+
+---
+
+## GitHub Copilot 連携
+
+このプロジェクトは VS Code の GitHub Copilot Chat でも完全に利用でき、既存の Claude Code ワークフローと整合します。
+
+- `.github/copilot-instructions.md` をワークスペース共通ルールとして運用する。
+- `.github/agents/` で再利用可能な Copilot エージェントを管理する。
+- `.github/prompts/` でスラッシュコマンド型の反復ワークフローを提供する。
+- `.github/skills/` を使って知識資産を横断的に再利用する。
+- `.vscode/mcp.json` で MCP 連携を管理し、最小権限を徹底する。
+- 高リスク自動化は会話内ではなく CI パイプラインでレビュー付き実行に寄せる。
+- 導入は `/plan`、`/tdd`、`/code-review` の 3 本を起点に段階的に拡張する。

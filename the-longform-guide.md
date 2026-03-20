@@ -352,3 +352,15 @@ alias q='cd ~/Desktop/projects'
 ---
 
 *Everything covered in both guides is available on GitHub at [everything-claude-code](https://github.com/affaan-m/everything-claude-code)*
+
+## GitHub Copilot Advanced Workflow
+
+The same long-session patterns apply in Copilot Chat, with tighter context discipline and explicit handoffs.
+
+- Run phased sessions: explore, plan, implement, verify, summarize.
+- Keep context lean by scoping to exact files first, then widen only when necessary.
+- Persist session continuity via short progress notes and explicit next-actions files.
+- Use specialized agents for bounded tasks to avoid context bleed across responsibilities.
+- Run validation loops earlier (lint/tests/type checks) instead of batching them at the end.
+- Standardize prompt templates for repeat tasks so handoffs stay predictable across sessions.
+- Review diffs in small batches to reduce rework and maintain high confidence.

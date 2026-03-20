@@ -429,3 +429,14 @@ affoon:~ ctx:65% Opus 4.5 19:52
 ---
 
 *Won the Anthropic x Forum Ventures hackathon in NYC building [zenith.chat](https://zenith.chat) with [@DRodriguezFX](https://x.com/DRodriguezFX)*
+
+## GitHub Copilot Quickstart
+
+Everything Claude Code also works with GitHub Copilot Chat in VS Code, so you can keep the same workflows across tools.
+
+- Install GitHub Copilot and Copilot Chat in VS Code, then open this repository as your workspace.
+- Use `.github/copilot-instructions.md` for always-on workspace behavior and guardrails.
+- Use `.github/agents/` for specialized Copilot agents and the Copilot agent dropdown.
+- Use `.github/prompts/` for reusable slash-command style prompts.
+- Use `.github/skills/` for packaged workflow knowledge mirrored from this repo.
+- Start with one high-frequency path (`/plan`, `/tdd`, `/code-review`) before layering more automation.

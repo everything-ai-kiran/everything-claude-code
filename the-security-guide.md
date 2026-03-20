@@ -593,3 +593,16 @@ The patterns in this guide aren't complex. They're habits. Build them into your 
 *Built from 10 months of maintaining the most-forked agent configuration on GitHub, auditing thousands of community contributions, and building the tools to automate what humans can't catch at scale.*
 
 *Affaan Mustafa ([@affaanmustafa](https://x.com/affaanmustafa)) — Creator of Everything Claude Code and AgentShield*
+
+## GitHub Copilot Hardening Checklist
+
+Apply the same agent-security principles to Copilot Chat configuration and workflow assets.
+
+- Keep policy in `.github/copilot-instructions.md` and review every change in PRs.
+- Never store secrets in prompts, agent files, examples, or committed workspace settings.
+- Scope Copilot tasks to minimal files and avoid unnecessary broad workspace reads.
+- Require human review before executing generated shell commands or infrastructure mutations.
+- Audit third-party prompt/agent assets as supply-chain inputs before adoption.
+- Minimize extension and MCP footprint; disable unused integrations.
+- Add CI checks for `.github/agents/`, `.github/prompts/`, and `.github/skills/` integrity.
+- Log and review high-impact AI-assisted changes with the same rigor as manual code changes.

@@ -469,3 +469,15 @@ OpenClaw 可以演变成这样。基础已经存在。社区积极参与。团�
 ***
 
 *Affaan Mustafa ([@affaanmustafa](https://x.com/affaanmustafa)) 构建 AI 编程工具并撰写关于 AI 基础设施安全的文章。他的 everything-claude-code 仓库在 GitHub 上拥有 5 万多个星标。他创建了 AgentShield 并凭借构建 [zenith.chat](https://zenith.chat) 赢得了 Anthropic x Forum Ventures 黑客松。*
+
+## GitHub Copilot 的安全取舍
+
+相较开放多通道智能体生态，Copilot Chat 默认执行面更窄，更易纳入仓库治理流程。
+
+- 将信任边界收敛到仓库内可审计配置文件，而非分散外部渠道。
+- 把 `.github/agents/`、`.github/prompts/`、`.github/skills/` 视为安全关键资产并强制 PR 审查。
+- 仅启用当前项目必需的 MCP 集成，控制攻击面扩张速度。
+- 优先采用可审计、可回滚的文件化规则，避免来源不明市场资产。
+- 高风险自动化优先放入 CI 与审批门禁，而非长期在线对话执行。
+- 所有外部工具使用最小权限凭证，并建立轮换与吊销流程。
+- 定期扫描提示词与智能体内容，防御隐藏指令与传递性注入。

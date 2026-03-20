@@ -468,3 +468,15 @@ Build secure by design. Not secure by accident.
 ---
 
 *Affaan Mustafa ([@affaanmustafa](https://x.com/affaanmustafa)) builds AI coding tools and writes about AI infrastructure security. His everything-claude-code repo has 50K+ GitHub stars. He created AgentShield and won the Anthropic x Forum Ventures hackathon building [zenith.chat](https://zenith.chat).*
+
+## GitHub Copilot Security Posture
+
+Compared to open multi-channel agent ecosystems, Copilot Chat starts with a narrower default execution surface.
+
+- Keep trust boundaries local to repository-scoped instructions and reviewed configuration files.
+- Treat `.github/agents/`, `.github/prompts/`, and `.github/skills/` as security-sensitive assets under PR review.
+- Restrict external integrations to only the MCP servers needed for the current project.
+- Prefer auditable file-based instructions over opaque marketplace imports.
+- Keep high-risk automation in CI with review gates instead of always-on conversational execution.
+- Use least-privilege credentials for all external tools and rotate them on exposure.
+- Regularly validate prompt/agent content for hidden instruction or transitive injection patterns.

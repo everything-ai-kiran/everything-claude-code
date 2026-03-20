@@ -35,7 +35,9 @@
 
 Not just configs. A complete system: skills, instincts, memory optimization, continuous learning, security scanning, and research-first development. Production-ready agents, hooks, commands, rules, and MCP configurations evolved over 10+ months of intensive daily use building real products.
 
-Works across **Claude Code**, **Codex**, **Cowork**, and other AI agent harnesses.
+Works across **Claude Code**, **GitHub Copilot Chat**, **Codex**, **Cowork**, and other AI agent harnesses.
+
+For Copilot setup, see [.github/COPILOT-SETUP.md](.github/COPILOT-SETUP.md).
 
 ---
 

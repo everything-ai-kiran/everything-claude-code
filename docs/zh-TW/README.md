@@ -478,3 +478,17 @@ MIT - 自由使用、依需求修改、如可能請回饋貢獻。
 ---
 
 **如果有幫助請為本儲存庫加星。閱讀兩份指南。打造偉大的作品。**
+
+---
+
+## GitHub Copilot 整合
+
+本專案已可在 VS Code 的 GitHub Copilot Chat 中完整使用，且與現有 Claude Code 流程保持一致。
+
+- 使用 `.github/copilot-instructions.md` 作為工作區級常駐規範。
+- 使用 `.github/agents/` 管理可重用 Copilot 智能體。
+- 使用 `.github/prompts/` 提供斜槓指令型工作流入口。
+- 使用 `.github/skills/` 複用技能知識並保持跨工具一致性。
+- 在 `.vscode/mcp.json` 設定 MCP 服務並採用最小權限原則。
+- 將高風險自動化放入 CI 流程，並透過 PR 审核進行治理。
+- 建議先從 `/plan`、`/tdd`、`/code-review` 三條核心路徑啟動。
